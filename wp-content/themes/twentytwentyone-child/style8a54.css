@@ -1,0 +1,224 @@
+/*
+Theme Name: Twenty Twenty One Child Theme
+Theme URI: http://example.com/neve-child/
+description: Twenty Twenty One Child Theme
+Author: Emilio Ziniades
+Template: twentytwentyone
+Version: 1.0.0
+
+*/
+
+/******************************************************************************/
+
+/* Generic CSS added by ez */
+
+a:link {
+   color:none;
+}
+
+.ez-heading {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+.ez-page-numbers {
+    display: flex;
+    justify-content: center;
+}
+
+.ez-page-numbers a {
+    padding:10px;
+    margin:0px;
+}
+
+.ez-page-numbers span {
+    padding:10px;
+    margin:0px;
+}
+
+.site-main > header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ .powered-by {
+        text-align: center;
+        padding: 0.5em;
+}
+
+
+/******************************************************************************/
+
+/*Woocommerce-related*/
+
+    /*Hide price sorting options*/
+    
+.orderby{
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 4px solid black;
+}
+
+    /* Make WP Menu Cart bigger and aligned*/
+    
+.wpmenucart-contents {
+    font-size: x-large;
+}
+
+#wpmenucartli {
+    padding-top: 0.4rem;
+}
+
+    /*Current Works page*/
+
+.woocommerce-ordering {
+margin-right: 10rem;
+}
+.woocommerce-result-count {
+margin-left: 10rem;
+}
+
+.woocommerce ul.products li.product {
+        align-items: center;
+    justify-content: center;
+}
+
+        /*Pagination*/
+        
+        .page-numbers{
+            list-style:none;
+            margin:0;
+            padding:0;
+            text-align:center;
+        }
+        .page-numbers li{
+            display:inline;
+        }
+        
+        /*Image thumbnails displayed in store*/
+.attachment-woocommerce_thumbnail {
+    width: auto;
+    /*height: auto;*/
+    max-width: 20rem;
+    max-height: 20rem;
+}
+/******************************************************************************/
+
+/*Archive page */
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: row dense;
+    align-items: center;
+    justify-content: center;
+}
+
+    /*Phones*/
+@media only screen 
+   and (max-width : 360px) {
+   .grid-container {
+    grid-template-columns: 1fr;
+}
+}
+    /*Tablets*/
+@media only screen 
+   and (max-width : 768px) and (min-width: 360px){
+   .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    /*Desktop*/
+@media only screen 
+   and (min-width : 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.grid-item {
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+.grid-item a {
+    color: black;
+}
+
+.grid-item a:hover {
+    color: #0366d6;
+}
+
+
+.painting-image {
+    position: relative;
+}
+
+.art-title, .art-price{
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    float: left;
+}
+
+.wp-post-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/******************************************************************************/
+
+
+/*Red dot indicating painting is sold both on Current Works and Archive*/
+
+.dot, .dot-no-float {
+  height: 10px;
+  width: 10px;
+  background-color: #DD2630;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  padding: 2rem 2rem 0rem 0rem;
+}
+
+.dot {
+  display: float;
+  float: right;
+}
+
+.dot-no-float {
+    display: inline-block;
+}
+
+/******************************************************************************/
+
+/*Button 'View In Shop' */
+
+a.button5{
+ display:float;
+ float: right;
+ padding:0.3em 0.3em;
+ border:0.1em solid #000000;
+ margin:10px 10px 10px 10px;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#000000;
+ text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+ background-color:#42cc8c;
+ text-align:center;
+ transition: all 0.15s;
+}
+a.button5:hover{
+ text-shadow: 0 0 2em rgba(255,255,255,1);
+ color:#FFFFFF;
+ border-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+ a.button5{
+  display:block;
+  margin:0.4em auto;
+ }
+} 
